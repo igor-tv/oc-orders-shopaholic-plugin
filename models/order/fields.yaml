@@ -101,12 +101,18 @@ tabs:
         payment_data_json:
             label: 'lovata.ordersshopaholic::lang.field.payment_data'
             span: left
+            context:
+            - update
+            - preview
             type: partial
             path: ~/plugins/lovata/ordersshopaholic/controllers/orders/_payment_data_json.htm
             tab: 'lovata.ordersshopaholic::lang.tab.payment_data'
         payment_response_json:
             label: 'lovata.ordersshopaholic::lang.field.payment_response'
             span: right
+            context:
+            - update
+            - preview
             type: partial
             path: ~/plugins/lovata/ordersshopaholic/controllers/orders/_payment_response_json.htm
             tab: 'lovata.ordersshopaholic::lang.tab.payment_data'
